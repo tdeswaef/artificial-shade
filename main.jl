@@ -80,7 +80,7 @@ for i in 154:154  # sunny day : 146:162
     nphi = 12);
 
     # create and run the raytracer
-    rtobj   = create_raytracer_fast(sc_total, sources)
+    rtobj   = create_raytracer(sc_total, sources)
     @time trace!(rtobj)
     
     #collect the absorbed power per tile and for the net
